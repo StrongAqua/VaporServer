@@ -8,7 +8,7 @@
 import Vapor
 
 struct CatalogRequest: Content {
-    let page_number: String
+    let page_number: Int
     let id_category: Int
 }
 

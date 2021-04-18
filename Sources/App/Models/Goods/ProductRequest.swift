@@ -8,5 +8,5 @@
 import Vapor
 
 struct ProductRequest: Content {
-    let id_product: String
+    let id_product: Int
 }
