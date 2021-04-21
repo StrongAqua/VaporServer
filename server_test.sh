@@ -58,3 +58,33 @@ curl --location --request POST "${baseUrl}logout" \
             "id_user": 1 
     }'
 echo
+
+curl --location --request POST "${baseUrl}addReview" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_user": 1,
+            "text": "abyrvalg"
+    }'
+echo
+
+curl --location --request POST "${baseUrl}approveReview" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_comment": 1
+    }'
+echo
+
+curl --location --request POST "${baseUrl}removeReview" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_comment": 1 
+    }'
+echo
+
+curl --location --request POST "${baseUrl}listReview" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "page_number": 1,
+            "id_product": 1
+    }'
+echo
