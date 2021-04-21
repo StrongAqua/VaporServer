@@ -55,6 +55,6 @@ echo
 curl --location --request POST "${baseUrl}logout" \
     --header 'Content-Type: application/json' \
     --data-raw '{
-            "user_id": "1" 
+            "id_user": 1 
     }'
 echo
