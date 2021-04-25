@@ -88,3 +88,31 @@ curl --location --request POST "${baseUrl}listReview" \
             "id_product": 1
     }'
 echo
+
+curl --location --request POST "${baseUrl}getBasket" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_user": 1
+    }'
+echo
+
+curl --location --request POST "${baseUrl}addToBasket" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_product": 1,
+            "quantity": 1
+    }'
+echo
+
+curl --location --request POST "${baseUrl}removeProductFromBasket" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+            "id_product": 1,
+            "quantity": 1
+    }'
+echo
+
+curl --location --request POST "${baseUrl}payForBasket" \
+    --header 'Content-Type: application/json' \
+    --data-raw '{}'
+echo
