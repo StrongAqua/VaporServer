@@ -65,13 +65,15 @@ class ReviewsController {
                     id_comment: 123,
                     id_user: 12,
                     id_product: 345,
-                    text: "Well"
+                    text: "Well",
+                    user_name: "Alice Smith"
                 ),
                 Review(
                     id_comment: 124,
                     id_user: 10,
                     id_product: 345,
-                    text: "Funny"
+                    text: "Funny",
+                    user_name: "Bob Doe"
                 )
             ]
         )

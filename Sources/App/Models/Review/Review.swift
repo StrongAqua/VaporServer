@@ -12,4 +12,5 @@ struct Review: Content {
     let id_user: Int
     let id_product: Int
     let text: String
+    let user_name: String
  }
